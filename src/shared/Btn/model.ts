@@ -1,1 +1,1 @@
-export type linkPropsType = { link: {href: string; name: string }};
+export type btnType = {text: string, action: any};

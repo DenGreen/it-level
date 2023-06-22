@@ -1,10 +1,11 @@
-import { Description, Stages } from "@/widgets";
+import { Description, Price, Stages } from "@/widgets";
 
 export default function Home() {
   return (
     <>
       <Description />
       <Stages />
+      <Price />
     </>
   );
 }
