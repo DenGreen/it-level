@@ -1,0 +1,27 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: $slate;
+}
+
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 370px;
+  max-width: 1440px;
+  max-height: 100%;
+  background-color: $slate;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerTel {
+  font-size: 26px;
+  color: $light;
+}

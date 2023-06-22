@@ -1,0 +1,86 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.banner {
+  position: relative;
+  display: block;
+  height: 720px;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      52.47% 100% at 82.81% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.277083) 70.5%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: -1;
+  }
+}
+
+.bannerBox {
+  min-width: 370px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 130px;
+  padding-left: 70px;
+  padding-right: 70px;
+  color: $light;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.badge {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 700px;
+  padding-top: 55px;
+  font-size: 54px;
+  line-height: 64px;
+}
+
+.list {
+  padding-left: 20px;
+  margin-top: 55px;
+  line-height: 35px;
+  margin-bottom: 55px;
+}
+
+.item {
+  position: relative;
+  font-size: 22px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $light;
+  }
+}

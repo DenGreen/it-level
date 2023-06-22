@@ -1,0 +1,12 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.btn {
+    color: $slate;
+    padding: 16px 48px;
+    background-color: $amber;
+
+    &:hover {
+        background-color: #e7c552;
+    }
+}
