@@ -1,4 +1,4 @@
-import { Description, Price, Stages } from "@/widgets";
+import { Description, Form, Price, Stages } from "@/widgets";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Description />
       <Stages />
       <Price />
+      <Form />
     </>
   );
 }

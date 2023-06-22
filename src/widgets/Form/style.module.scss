@@ -1,0 +1,51 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.box {
+  display: flex;
+  justify-content: center;
+  min-width: 370px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 140px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.title {
+  font-size: 34px;
+  color: $slate;
+}
+
+.motivation {
+  max-width: 55%;
+}
+
+.text {
+  padding-top: 20px;
+  font-size: 22px;
+  color: $gray;
+  line-height: 30px;
+}
+
+.form {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  max-width: 40%;
+}
+
+.input {
+  height: 45px;
+  width: 100%;
+  border: 0;
+  outline:none;
+  border-bottom: 1px solid $gray;
+  font-size: 22px;
+  color: $gray;
+
+  &:focus {
+    background-color: $lightIndigo;
+  }
+}
