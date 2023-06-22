@@ -1,0 +1,39 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.box {
+  min-width: 370px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 140px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.text {
+  position: relative;
+  padding: 60px 20px;
+  font-size: 22px;
+  line-height: 35px;
+  color: $gray;
+  background-color: $lightSlate;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &::after {
+    content: "";
+    height: 12px;
+    width: 80%;
+    position: absolute;
+    top: -12px;
+    right: 0;
+    border-top-right-radius: 5px;
+    background: rgb(252, 211, 77);
+    background: linear-gradient(
+      90deg,
+      rgba(252, 211, 77, 1) 62%,
+      rgba(67, 56, 202, 1) 62%
+    );
+  }
+}

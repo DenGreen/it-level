@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={fonts.body3.className}>
         <Header />
         <Banner />
-        <main className="">
+        <main>
           {children}
         </main>
       </body>

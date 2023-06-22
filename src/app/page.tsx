@@ -1,3 +1,10 @@
+import { Description, Stages } from "@/widgets";
+
 export default function Home() {
-  return <h2>Главная</h2>;
+  return (
+    <>
+      <Description />
+      <Stages />
+    </>
+  );
 }

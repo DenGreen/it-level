@@ -1,0 +1,26 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.box {
+  min-width: 370px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 140px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.title {
+  font-size: 34px;
+  color: $slate;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 30px;
+  margin-top: 50px;
+}

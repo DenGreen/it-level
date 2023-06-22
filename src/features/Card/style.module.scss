@@ -1,0 +1,34 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.box {
+  max-width: 400px;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 5px;
+
+  &:nth-child(odd) {
+    border: 1px solid $mediumGrey;
+  }
+
+  &:nth-child(even) {
+    background-color: $amber;
+  }
+}
+
+.num {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 26px;
+  color: $slate;
+  background-color: $lightYellow;
+}
+
+.text {
+  padding-top: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $gray;
+}
