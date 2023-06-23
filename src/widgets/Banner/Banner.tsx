@@ -17,7 +17,7 @@ export const Banner = () => {
           <li className={style.item}>Гарантия на ремонт до 3-х лет</li>
           <li className={style.item}>Скидки до 15%</li>
         </ul>
-        <Btn />
+        <Btn text={"Отправить заявку"} action={null} />
       </div>
     </section>
   );
