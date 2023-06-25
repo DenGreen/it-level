@@ -24,6 +24,10 @@
     );
     z-index: -1;
   }
+
+  @include md {
+    height: 600px;
+  }
 }
 
 .bannerBox {
@@ -35,6 +39,12 @@
   padding-left: 70px;
   padding-right: 70px;
   color: $light;
+
+  @include md {
+    padding-top: 65px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 .img {
@@ -47,12 +57,20 @@
   max-height: 720px;
   object-fit: cover;
   z-index: -1;
+  
+  @include md {
+    max-height: 600px;
+  }
 }
 
 .badge {
   font-size: 16px;
   letter-spacing: 3px;
   text-transform: uppercase;
+
+  @include md {
+    font-size: 14px;
+  }
 }
 
 .title {
@@ -60,6 +78,11 @@
   padding-top: 55px;
   font-size: 54px;
   line-height: 64px;
+
+  @include md {
+    padding-top: 30px;
+    font-size: 44px;
+  }
 }
 
 .list {
@@ -67,6 +90,11 @@
   margin-top: 55px;
   line-height: 35px;
   margin-bottom: 55px;
+
+  @include md {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
 }
 
 .item {
@@ -74,7 +102,7 @@
   font-size: 22px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 11px;
     left: -20px;
@@ -82,5 +110,9 @@
     height: 10px;
     border-radius: 50%;
     background-color: $light;
+  }
+
+  @include md {
+    font-size: 20px;
   }
 }

@@ -19,6 +19,11 @@
   padding-right: 70px;
   margin-left: auto;
   margin-right: auto;
+
+  @include md {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 .headerTel {

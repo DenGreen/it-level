@@ -12,15 +12,30 @@
   padding-top: 140px;
   padding-left: 70px;
   padding-right: 70px;
+
+  @include md {
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 .title {
   font-size: 34px;
   color: $slate;
+
+  @include md {
+    font-size: 26px;
+  }
 }
 
 .motivation {
   max-width: 55%;
+
+  @include md {
+    max-width: 49%;
+}
 }
 
 .text {
@@ -28,11 +43,19 @@
   font-size: 22px;
   color: $gray;
   line-height: 30px;
+
+  @include md {
+    font-size: 18px;
+  }
 }
 
 .tel {
   font-size: 22px;
-  color: $indigo
+  color: $indigo;
+
+  @include md {
+    font-size: 18px;
+  }
 }
 
 .form {
@@ -40,6 +63,10 @@
   row-gap: 20px;
   flex-wrap: wrap;
   max-width: 40%;
+
+  @include md {
+      max-width: 49%;
+  }
 }
 
 .input {
@@ -53,5 +80,9 @@
 
   &:focus {
     background-color: $lightIndigo;
+  }
+
+  @include md {
+    font-size: 18px;
   }
 }
