@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import "./scss/reset.scss"
 import { fonts } from "@/fonts/fonts";
-import { Header } from "@/widgets";
+import { Footer, Header } from "@/widgets";
 import { Banner } from "@/widgets";
 
 export const metadata: Metadata = {
@@ -22,6 +22,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

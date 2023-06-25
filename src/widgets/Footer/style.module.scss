@@ -1,0 +1,26 @@
+@import "../../app/scss/breakpoints.scss";
+@import "../../app/scss/variable.scss";
+
+.box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px;
+  min-width: 370px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 70px;
+  background-color: $slate;
+  color: $lightSlate;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.link {
+  color: $lightSlate;
+  border-bottom: 1px solid $lightSlate;
+}
