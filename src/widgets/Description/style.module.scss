@@ -18,11 +18,22 @@
     padding-left: 35px;
     padding-right: 35px;
   }
+
+  @include sm {
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .img {
   position: absolute;
   top: 0;
+
+  @include sm {
+    display: none;
+  }
 }
 
 .text {
@@ -58,5 +69,10 @@
     width: 75%;
     padding: 20px 10px;
     font-size: 20px;
+  }
+
+  @include sm {
+    padding: 20px 15px;
+    width: 100%;
   }
 }
