@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 export const metadata: Metadata = {
   title: "ITLevel",
   description:
-    "Сайт компании по ремонту ноутбуков и компьютеров в Балаково, Вольске",
+    "Сайт компании по ремонту ноутбуков и компьютеров в Балаково",
 };
 
 export default function RootLayout({
