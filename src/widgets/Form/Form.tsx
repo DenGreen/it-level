@@ -1,46 +1,9 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import style from "./style.module.scss";
-import { Btn } from "@/shared";
 import { fonts } from "@/fonts/fonts";
+import { FormInp } from "@/features";
 
 export const Form = () => {
-  const [phone, setPhone] = useState("");
-  const [name, setName] = useState("");
-
-  const action = async () => {
-    const response = await fetch("", { /* "https://secretapi.ru/lead?source=partner&idp=93202471-c428-7554-d47c9d19d66aa153" */
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        direction_id: 1,
-        branch_id: 119,
-        offer_id: 1,
-        phones: [phone],
-        is_pm: false,
-        name: name,
-      }),
-    });
-
-    setPhone("")
-    setName("")
-
-    if(response.status === 204) {
-        console.log('Заявка принята')
-    }
-/* 
-    console.log({
-      direction_id: 1,
-      branch_id: 119,
-      offer_id: 1,
-      phones: [phone],
-      is_pm: false,
-      name: name,
-    }); */
-  };
-
   return (
     <section className={style.box}>
       <div className={style.motivation}>
@@ -49,26 +12,14 @@ export const Form = () => {
           Наши специалисты со стажем работы более 10 лет, проконсультируют Вас и
           решат вашу проблему в кратчайшие сроки. Все что вам нужно сделать, это
           оставить заявку в форме обратной связи, либо позвонить нам по номеру
-          телефону: <a href="tel:+79061480132" className={style.tel}> 8 (906) 148-01-32</a>
+          телефону:{" "}
+          <a href="tel:+79061480132" className={style.tel}>
+            {" "}
+            8 (906) 148-01-32
+          </a>
         </p>
       </div>
-      <div className={style.form}>
-        <input
-          type="name"
-          value={name}
-          placeholder="Имя"
-          onChange={(e) => setName(e.target.value)}
-          className={style.input}
-        />
-        <input
-          type="tel"
-          value={phone}
-          placeholder="Телефон, начиная с 8"
-          onChange={(e) => setPhone(e.target.value)}
-          className={style.input}
-        />
-        <Btn text={"Отправить заявку"} action={action} />
-      </div>
+      <FormInp />
     </section>
   );
 };
