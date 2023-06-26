@@ -2,14 +2,14 @@
 import React, { useState } from "react";
 import style from "./style.module.scss";
 import { Btn } from "@/shared";
+import { toast } from 'react-toastify';
 
 export const FormInp = () => {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
 
   const action = async () => {
-    const response = await fetch("", {
-      /* "https://secretapi.ru/lead?source=partner&idp=93202471-c428-7554-d47c9d19d66aa153" */
+    const response = await fetch("https://secretapi.ru/lead?source=partner&idp=93202471-c428-7554-d47c9d19d66aa153", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +28,16 @@ export const FormInp = () => {
     setName("");
 
     if (response.status === 204) {
-      console.log("Заявка принята");
+      toast.success("Заявка принята", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
     }
     /* 
     console.log({
