@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://acme.com/sitemap.xml
+Sitemap: http://it-level.pro/sitemap.xml
