@@ -1,6 +1,11 @@
 @import "../../app/scss/breakpoints.scss";
 @import "../../app/scss/variable.scss";
 
+
+.footer {
+  background-color: $slate;
+}
+
 .box {
   display: flex;
   gap: 20px;
@@ -11,7 +16,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 50px 70px;
-  background-color: $slate;
   color: $lightSlate;
   
   @include md {
@@ -27,6 +31,11 @@
 .text {
   font-size: 16px;
   line-height: 20px;
+
+  @include sm {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .link {

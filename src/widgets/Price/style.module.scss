@@ -15,6 +15,12 @@
     padding-left: 35px;
     padding-right: 35px;
   }
+
+  @include sm {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .title {
@@ -60,6 +66,12 @@
 
     @include md {
       font-size: 16px;
+    }
+  }
+
+  @include sm {
+    & > span:nth-child(odd) {
+      width: 70%;
     }
   }
 }

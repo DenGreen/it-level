@@ -21,7 +21,7 @@ export const Price = () => {
             return (
               <li className={`${style.item} ${fonts.body3.className}`} key={i}>
                 <span>{value.name}</span>
-                <span>{value.price} руб.</span>
+                <span>от {value.price} руб.</span>
               </li>
             );
           })}

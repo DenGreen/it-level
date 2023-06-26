@@ -19,6 +19,11 @@
     max-width: 300px;
     padding: 15px;
   }
+
+  @include sm {
+    max-width: 100%;
+    min-height: 200px;
+  }
 }
 
 .num {
@@ -29,6 +34,11 @@
   font-size: 26px;
   color: $slate;
   background-color: $lightYellow;
+
+  @include sm {
+    margin-top: 10px;
+    padding-top: 15px;
+  }
 }
 
 .text {
@@ -36,4 +46,8 @@
   font-size: 18px;
   line-height: 30px;
   color: $gray;
+
+  @include sm {
+    padding-top: 20px;
+  }
 }
