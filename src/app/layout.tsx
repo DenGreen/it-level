@@ -4,7 +4,6 @@ import { fonts } from "@/fonts/fonts";
 import { Footer, Header } from "@/widgets";
 import { Banner } from "@/widgets";
 import { ToastContainer } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
