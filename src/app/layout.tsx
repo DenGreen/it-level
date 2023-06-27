@@ -8,8 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
   title: "ITLevel",
-  description: "Сайт компании по ремонту ноутбуков и компьютеров в Балаково",
-  manifest: "http://localhost:3000/manifest.json"
+  description: "Ремонт ноутбуков и компьютеров в Балаково и Саратов",
 };
 
 export default function RootLayout({
