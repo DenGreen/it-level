@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <Script src="http://localhost:3000/yametr.js" />
+      <Script src="http://it-level/yametr.js" />
       <body className={fonts.body3.className}>
         <img src="https://mc.yandex.ru/watch/94109496" className={styleYa.ya} alt="" />
         <ToastContainer />
