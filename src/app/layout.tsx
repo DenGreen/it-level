@@ -7,8 +7,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
-  title: "ITLevel",
-  description: "Ремонт ноутбуков и компьютеров в Балаково и Саратов",
+  title: "Ремонт ноутбуков и компьютеров в Балаково и Саратове",
+  description: "Ремонт ноутбуков и компьютеров, настройка игровых приставок. В Балаково и Саратове",
 };
 
 export default function RootLayout({
