@@ -92,14 +92,14 @@ export const FormInp = () => {
       });
     }
     
-    console.log({
+/*     console.log({
       direction_id: 1,
       branch_id: Number(city),
       offer_id: 1,
       phones: [phone],
       is_pm: false,
       name: name,
-    }); 
+    });  */
   };
 
   return (
