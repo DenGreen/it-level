@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'http://it-level.pro/sitemap.xml',
+    sitemap: 'https://it-level.pro/sitemap.xml',
   }
 }
