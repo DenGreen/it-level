@@ -125,8 +125,12 @@ export const FormInp = () => {
         className={style.input}
       >
         <option value="">-</option>
+        <option value="164">Абакан</option>
+        <option value="103">Альметьевск</option>
         <option value="119">Балаково</option>
+        <option value="513629">Раменское</option>
         <option value="12">Саратов</option>
+        <option value="221">Энгельс</option> 
       </select>
       <Btn text={"Отправить заявку"} action={action} />
     </div>
