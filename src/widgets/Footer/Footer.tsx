@@ -25,7 +25,7 @@ export const Footer = () => {
         <div className={`${fonts.body3.className} ${style.text}`}>
           Информация на данном ресурсе не является публичной офертой.
           <br />
-          ИНН 643968686347 / Малышев Денис Вячеславович / ул.Титова 35
+          ИНН 643968686347
           <br />
           <a
             href={"./doc/polit.pdf"}
