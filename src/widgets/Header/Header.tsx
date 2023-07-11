@@ -9,8 +9,8 @@ export const Header = () => {
       <section className={style.headerBox}>
         <Image src={logo} className={style.logo} alt='Логотип' priority/>
         <div className={`${style.headerTel} ${fonts.headingH3.className}`}>
-          Тел:
-          <a href="tel:+79061480132" className={style.headerTel}> 8 (906) 148-01-32</a>
+          {/*Тел:
+          <a href="tel:+79061480132" className={style.headerTel}> 8 (906) 148-01-32</a>*/}
         </div>
       </section>
     </header>

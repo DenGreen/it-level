@@ -13,7 +13,7 @@ export const Footer = () => {
           <br />
           Работаем в черте города + до 40 км от границы города - бесплатно.
         </div>
-        <div className={`${fonts.body3.className} ${style.text}`}>
+        {/*<div className={`${fonts.body3.className} ${style.text}`}>
           Если вы остальсь не довольны качеством обслуживания, сообщите нам.{" "}
           <br /> <a href="mailto:itlevel78@gmail.com" className={style.headerTel}>e-mail: itlevel78@gmail.com</a> <br />
           тел:{" "}
@@ -34,8 +34,8 @@ export const Footer = () => {
             target="_blank"
           >
             Политика конфиденциальности
-          </a>
-        </div>
+  </a>
+        </div>*/}
       </section>
     </footer>
   );
