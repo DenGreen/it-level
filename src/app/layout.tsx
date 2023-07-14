@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <Script src={`${process.env.DB_HOST}yametr.js`} />
+      <meta name="yandex-verification" content="1bd1b64f98452855" />
       <body className={fonts.body3.className}>
         <img src="https://mc.yandex.ru/watch/94109496" className={styleYa.ya} alt="" />
         <ToastContainer />
